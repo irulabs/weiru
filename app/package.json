@@ -15,7 +15,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "build": "npm run build-css && react-scripts build",
-    "build-css": "tachyons src/index.css > src/index.css",
+    "build-css": "tachyons src/css/app.css > src/index.css",
     "watch-css": "chokidar src/index.css -c 'npm run build-css'"
   }
 }
