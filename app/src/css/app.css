@@ -1,6 +1,6 @@
 @import "tachyons";
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Rubik+Mono+One');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Montserrat:500,700');
 
 
 body {
@@ -13,13 +13,17 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Rubik Mono One', sans-serif;
+  font-family: 'Bungee', cursive;
 }
 
 
 /* controls padding for sections */
 .section {
   padding: 4rem 2rem;
+}
+
+.f0 {
+  font-size: 4rem;
 }
 
 .section-thin {

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Rubik+Mono+One');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Montserrat:500,700');
 /*! TACHYONS v4.9.0 | http://tachyons.io */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html { line-height: 1.15; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
@@ -863,9 +863,10 @@ img { max-width: 100%; }
 .debug-grid-8-solid { background: #fff url( data:image/gif;base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw== ) repeat 0 0; }
 .debug-grid-16-solid { background: #fff url( data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7 ) repeat 0 0; }
 body { font-family: 'Montserrat', sans-serif; }
-h1, h2, h3, h4, h5, h6 { font-family: 'Rubik Mono One', sans-serif; }
+h1, h2, h3, h4, h5, h6 { font-family: 'Bungee', cursive; }
 /* controls padding for sections */
 .section { padding: 4rem 2rem; }
+.f0 { font-size: 4rem; }
 .section-thin { padding: 2rem; }
 @media screen and (min-width:30em) {
  .aspect-ratio-ns { height: 0; position: relative; }
