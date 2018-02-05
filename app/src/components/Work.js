@@ -7,7 +7,7 @@ import placeholder2 from '../assets/placeholder/2.jpg';
 
 const Work = () => {
   return (
-    <section className="section tc">
+    <section className="ph7-l pv5 tc">
       <h3>Our Work</h3>
       <div className="flex-ns justify-between-ns">
         <Card

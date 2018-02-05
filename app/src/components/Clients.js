@@ -7,7 +7,7 @@ import emf from '../assets/clients/emf.png';
 
 const Clients = () => {
   return (
-    <section className="section-thin bg-white tc">
+    <section className="ph7-l pv2 bg-gray tc">
       <h3 className="mt0">You&#x27;re in good company</h3>
       <div className="flex justify-between">
         <div className="h2 w-10 tc flex items-center justify-center">
