@@ -28,6 +28,8 @@ class Contact extends Component {
         return this.setState({
           message: value
         })
+      default:
+        return ""
     }
   }
 
@@ -58,6 +60,7 @@ class Contact extends Component {
             value={this.state.message}
             handleInput={this.handleInput}
             placeholder="let us know how we can help!" />
+
             <div className="flex justify-end w-100">
               <div
                 className="bg-white f4 tc w-30 pa3"

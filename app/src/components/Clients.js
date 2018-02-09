@@ -11,19 +11,19 @@ const Clients = () => {
       <h3 className="mt0">You&#x27;re in good company</h3>
       <div className="flex justify-between">
         <div className="h2 w-10 tc flex items-center justify-center">
-          <img src={berkeley} />
+          <img alt="" src={berkeley} />
         </div>
         <div className="h2 w-10 tc flex items-center justify-center">
-          <img src={buildingExploratory} />
+          <img alt="" src={buildingExploratory} />
         </div>
         <div className="h2 w-10 tc flex items-center justify-center">
-          <img src={city} />
+          <img alt="" src={city} />
         </div>
         <div className="h2 w-10 tc flex items-center justify-center">
-          <img className="w-70" src={dwyl} />
+          <img alt="" className="w-70" src={dwyl} />
         </div>
         <div className="h2 w-10 tc flex items-center justify-center">
-          <img src={emf} />
+          <img alt="" src={emf} />
         </div>
       </div>
     </section>
