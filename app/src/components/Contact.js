@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Input from './Input';
+import encode from '../helpers/encode.js';
+
 
 class Contact extends Component {
 
@@ -13,56 +15,26 @@ class Contact extends Component {
     }
   }
 
-  handleInput = (type, value) => {
-    switch (type) {
-      case "name":
-        return this.setState({
-          name: value
-        })
-      case "email":
-        return this.setState({
-          email: value
-        })
-      case "message":
-        return this.setState({
-          message: value
-        })
-      default:
-        return ""
-    }
-  }
-
- encode = (data) => {
-    console.log('got in the encode')
-    return Object.keys(data)
-        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-        .join("&");
-  }
-
   handleChange = (name, value) => {
     this.setState({ [name]: value })
   };
 
-  handleSubmit = (e) => {
-    console.log(this.state, 'state') // has the sate
-    console.log('in handle submit')
+  handleSubmit = e => {
     fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: this.encode({ "form-name": "contact", ...this.state })
+      body: encode({ "form-name": "contactIru", ...this.state })
     })
-      .then(() => console.log('posted sucessfully!'))
-      .catch((error) => console.log('error when posting'));
+    .then((res) => console.log(res, 'posted sucessfully!'))
+    .catch((error) => console.log('error when posting'));
 
-      e.preventDefault();
-  }
+    e.preventDefault();
+  };
 
   render() {
-
-    console.log(this.state)
     return (
       <section className="ph7-l pv5 bg-black">
-        <form name="contact" className="flex flex-wrap justify-between">
+        <form onSubmit={this.handleSubmit} className="flex flex-wrap justify-between">
           <Input
             width="w-45"
             label="name"
@@ -89,11 +61,11 @@ class Contact extends Component {
             placeholder="let us know how we can help!" />
 
             <div className="flex justify-end w-100">
-              <div
+              <button
                 className="bg-white f4 tc w-30 pa3"
-                onClick={(e) => this.handleSubmit(e)}>
+                type="submit">
                 Submit
-              </div>
+              </button>
             </div>
         </form>
 
