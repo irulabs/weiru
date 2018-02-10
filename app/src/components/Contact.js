@@ -62,7 +62,7 @@ class Contact extends Component {
 
             <div className="flex justify-end w-100">
               <button
-                className="bg-white f4 tc w-30 pa3"
+                className="ma2 bg-white f4 tc w-30 pa3 bn pointer outline-0"
                 type="submit">
                 Submit
               </button>
