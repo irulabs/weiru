@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Input from './Input';
 import encode from '../helpers/encode.js';
-
+import validator from 'email-validator';
 
 class Contact extends Component {
 
@@ -12,6 +12,7 @@ class Contact extends Component {
       name: "",
       email: "",
       message: "",
+      emailError: false
     }
   }
 
@@ -20,18 +21,41 @@ class Contact extends Component {
   };
 
   handleSubmit = e => {
-    fetch("/", {
-      method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contactIru", ...this.state })
-    })
-    .then((res) => console.log(res, 'posted sucessfully!'))
-    .catch((error) => console.log('error when posting'));
-
     e.preventDefault();
+    
+    const { name, email, message, emailError } = this.state;
+    const isValidEmail = validator.validate(email);
+
+      if (isValidEmail) {
+        if (emailError) {
+          this.setState({
+            emailError: false
+          })
+        }
+
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({
+            "form-name": "contactIru",
+            "name": name,
+            "email": email,
+            "message": message
+          })
+        })
+        .then((res) => console.log(res, 'posted sucessfully!'))
+        .catch((error) => console.log('error when posting'));
+
+      }
+      else {
+        this.setState({
+          emailError: true
+        })
+      }
   };
 
   render() {
+    console.log(this.state.emailError, 'error')
     return (
       <section className="ph7-l pv5 bg-black">
         <form onSubmit={this.handleSubmit} className="flex flex-wrap justify-between">
@@ -61,6 +85,9 @@ class Contact extends Component {
             placeholder="let us know how we can help!" />
 
             <div className="flex justify-end w-100">
+              { this.state.emailError &&
+                <div className="white">Please enter a valid email</div>
+              }
               <button
                 className="ma2 bg-white f4 tc w-30 pa3 bn pointer outline-0"
                 type="submit">
