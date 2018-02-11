@@ -17,6 +17,22 @@ h6 {
   sans-serif;
 }
 
+.bg-dark-magenta {
+  background: #7c2069;
+}
+
+.bg-light-orange {
+  background: #e99c1e;
+}
+.bg-dark-green {
+  background: #42A276;
+}
+
+
+.b--light-orange {
+  border-color: #e99c1e;
+}
+
 .f0 {
   font-size: 4rem;
 }
