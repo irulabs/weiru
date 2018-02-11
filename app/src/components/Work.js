@@ -13,16 +13,22 @@ const Work = () => {
       <div className="flex-ns justify-between-ns">
         <Card
           image={ quodl }
-          client="Etiam Nibh"
-          blurb="Nullam id dolor id nibh ultricies vehicula ut id elit."/>
+          client="Quodl"
+          blurb="A real-time quiz app to increase in-lecture engagement and support learning"
+          link="quodl"
+        />
         <Card
           image={ exploratory }
-          client="Risus Egestas"
-          blurb="Nullam quis risus eget urna mollis ornare vel eu leo."/>
+          client="Building Exploratory"
+          blurb="A Single Page app showcasing locally listed buildings in London Borough of Islington"
+          link="building-exploratory"
+        />
         <Card
           image={ berkeley }
-          client="Commodo Dolor"
-          blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+          client="Berkeley Homes"
+          blurb="Encouraging reporting of positive and negative safety behaviours on construction sites"
+          link="berkeley"
+          />
 
       </div>
     </section>
