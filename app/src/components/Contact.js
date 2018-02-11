@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import Input from './Input';
+import encode from '../helpers/encode.js';
+import validator from 'email-validator';
 
 class Contact extends Component {
 
@@ -10,62 +12,101 @@ class Contact extends Component {
       name: "",
       email: "",
       message: "",
+      emailError: false,
+      isSubmitted: false
     }
   }
 
-  handleInput = (type, value) => {
+  handleChange = (name, value) => {
+    this.setState({ [name]: value })
+  };
 
-    switch (type) {
-      case "name":
-        return this.setState({
-          name: value
+  handleSubmit = e => {
+    e.preventDefault();
+
+    const { name, email, message, emailError } = this.state;
+    const isValidEmail = validator.validate(email);
+
+      if (isValidEmail) {
+        if (emailError) {
+          this.setState({
+            emailError: false
+          })
+        }
+
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: encode({
+            "form-name": "contactIru",
+            "name": name,
+            "email": email,
+            "message": message
+          })
         })
-      case "email":
-        return this.setState({
-          email: value
+        .then((res) => {
+          console.log(res, 'posted sucessfully!')
+          this.setState({
+            isSubmitted: true
+          })
         })
-      case "message":
-        return this.setState({
-          message: value
+        .catch((error) => console.log('error when posting'));
+
+      }
+      else {
+        this.setState({
+          emailError: true
         })
-    }
-  }
+      }
+  };
 
   render() {
-
-    console.log(this.state)
+    console.log(this.state.emailError, 'error')
+    console.log(this.state.isSubmitted, 'isSubmitted')
     return (
       <section className="ph7-l pv5 bg-black">
-        <form className="flex flex-wrap justify-between">
-          <Input
-            width="w-45"
-            label="name"
-            inputType="input"
-            value={this.state.name}
-            handleInput={this.handleInput}
-            placeholder="Jessica Salmon" />
-          <Input
+      { !this.state.isSubmitted &&
+          <form onSubmit={this.handleSubmit} className="flex flex-wrap justify-between">
+            <Input
+              width="w-45"
+              label="name"
+              name="name"
+              inputType="input"
+              value={this.state.name}
+              handleInput={this.handleChange}
+              placeholder="Jessica Salmon" />
+            <Input
               width="w-45"
               label="email"
+              name="email"
               inputType="input"
               value={this.state.email}
-              handleInput={this.handleInput}
+              handleInput={this.handleChange}
               placeholder="youremail@here.com" />
-          <Input
-            width="w-100"
-            label="message"
-            inputType="textarea"
-            value={this.state.message}
-            handleInput={this.handleInput}
-            placeholder="let us know how we can help!" />
-            <div className="flex justify-end w-100">
-              <div
-                className="bg-white f4 tc w-30 pa3"
-                onClick={ () => { console.log('submitted')}}>
-                Submit
-              </div>
+            <Input
+              width="w-100"
+              label="message"
+              name="message"
+              inputType="textarea"
+              value={this.state.message}
+              handleInput={this.handleChange}
+              placeholder="let us know how we can help!" />
+
+            <div className="flex flex-column items-end w-100">
+              { this.state.emailError &&
+                <div className="white">Please enter a valid email</div>
+              }
+              <button
+                className="bg-white f4 tc w-30 pa3 bn pointer outline-0"
+                type="submit">
+                  Submit
+              </button>
             </div>
-        </form>
+          </form>
+      }
+      { this.state.isSubmitted &&
+        <div className="tc white pv6">Thanks for your message, we will be in touch soon.</div>
+      }
 
       </section>
     );

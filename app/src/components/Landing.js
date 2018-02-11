@@ -1,7 +1,4 @@
 import React from 'react';
-import landingOne from '../assets/landing/1.jpg';
-import landingTwo from '../assets/landing/2.jpg';
-import landingFive from '../assets/landing/5.jpg';
 
 const Landing = () => {
     return (
