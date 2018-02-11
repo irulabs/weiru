@@ -64,7 +64,7 @@ class Contact extends Component {
     console.log(this.state.emailError, 'error')
     console.log(this.state.isSubmitted, 'isSubmitted')
     return (
-      <section className="ph7-l pv5 bg-black">
+      <section className="ph4 ph6-m ph7-l pv5 bg-black">
       { !this.state.isSubmitted &&
           <form onSubmit={this.handleSubmit} className="flex flex-wrap justify-between">
             <Input
@@ -74,7 +74,7 @@ class Contact extends Component {
               inputType="input"
               value={this.state.name}
               handleInput={this.handleChange}
-              placeholder="Jessica Salmon" />
+              placeholder="your name" />
             <Input
               width="w-45"
               label="email"
