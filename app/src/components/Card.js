@@ -4,7 +4,7 @@ const Card = ({ image, client, blurb }) => {
   // whole card clicks through to case study
   return (
     <div className="w-100 w-30-ns tl">
-      <img src={ image } className="h5-ns w-100" />
+      <img alt="" src={ image } className="h5-ns w-100" />
       <div className="ph1">
         <p className="b">{ client }</p>
         <p>{ blurb }</p>
