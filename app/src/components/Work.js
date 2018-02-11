@@ -8,7 +8,7 @@ import berkeley from '../assets/berkeley/berkeley-mobile.png';
 
 const Work = () => {
   return (
-    <section className="ph7-l pv5 tc">
+    <section className="ph4 ph6-m ph7-l pv5 tc">
       <h3>Our Work</h3>
       <div className="flex-ns justify-between-ns">
         <Card

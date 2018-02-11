@@ -12,8 +12,8 @@ class BuildingExploratory extends Component {
     render() {
         return (
             <div>
-                <Nav color="bg-dark-magenta" postion="fixed"/>
-                <div className="ph7-l">
+                <Nav color="bg-dark-magenta" position="fixed"/>
+                <div className="ph4 ph5-m ph7-l">
 
                     <h3 className="tc mt0 pt6"> CLIENT WORK </h3>
                     <h1 className="f1 tc"> The Building Exploratory </h1>
@@ -25,7 +25,7 @@ class BuildingExploratory extends Component {
                       <h3 className="pl2 pt2">Project Goal </h3>
                     </div>
                     <p className="f4">
-                    The Building Exploratory came to us with a need to build an interactive app to showcase data from their Islington Local List project. During the project, Volunteers collected and documented information about 2000 locally listed buildings in the London Borough of Islington.
+                    The Building Exploratory came to us with a need to build an interactive app to showcase data from their Islington Local List project. During the project, volunteers collected and documented information about 2000 locally listed buildings in the London Borough of Islington.
                     </p>
                     <p className="f4">
                     Our task was to build an app which would present this information in an appealing way to encourage engagement by the wider community and have the content dynamically update when new data is added to The Building Exploratory’s databank.

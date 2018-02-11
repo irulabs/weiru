@@ -7,23 +7,20 @@ import emf from '../assets/clients/emf.png';
 
 const Clients = () => {
   return (
-    <section className="ph7-l pv2 tc">
+    <section className="ph4 ph7-l pv2 tc">
       <h3 className="mt0">You&#x27;re in good company</h3>
       <div className="flex justify-between">
         <div className="h2 w-10 tc flex items-center justify-center">
-          <img alt="" src={berkeley} />
+          <img alt="Berkeley Homes" src={berkeley} />
         </div>
         <div className="h2 w-10 tc flex items-center justify-center">
-          <img alt="" src={buildingExploratory} />
+          <img alt="The Building Exploratory" src={buildingExploratory} />
         </div>
         <div className="h2 w-10 tc flex items-center justify-center">
-          <img alt="" src={city} />
+          <img alt="City University London" src={city} />
         </div>
         <div className="h2 w-10 tc flex items-center justify-center">
-          <img alt="" className="w-70" src={dwyl} />
-        </div>
-        <div className="h2 w-10 tc flex items-center justify-center">
-          <img alt="" src={emf} />
+          <img alt="dwyl" className="w-70" src={dwyl} />
         </div>
       </div>
     </section>

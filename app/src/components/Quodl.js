@@ -12,12 +12,13 @@ class Quodl extends Component {
   render() {
     return (
       <div>
-        <Nav color="bg-light-orange" postion="fixed" />
-        <div className="ph7-l">
+        <Nav color="bg-light-orange" position="fixed" />
+        <div className="ph4 ph5-m ph7-l">
 
           <h3 className="tc mt0 pt6"> CLIENT WORK </h3>
           <h1 className="f1 tc"> Quodl </h1>
-          <p className="f4 tc"> A Single Page app showcasing locally listed buildings in London Borough of Islington </p>
+          <p className="f4 tc"> A real-time quiz app to increase
+          in-lecture engagement and support learning </p>
 
           <img src={quodlDesktopMobile} alt="design-images" />
 
@@ -39,7 +40,7 @@ class Quodl extends Component {
               <h3> Lecturer </h3>
               <p> Ability to set up multiple modules </p>
               <p> Run Live quizzes </p>
-              <p> Set up Gamification with medals and trophies </p>
+              <p> Set up gamification with medals and trophies </p>
               <p> Review student progress, keeping track of how individuals are getting on </p>
             </div>
             <div className="w-40 ba bw1 b--light-orange mh2 ph2">
@@ -58,7 +59,7 @@ class Quodl extends Component {
             <h3 className="pl2">Implementation </h3>
           </div>
           <p className="f4">
-            One of the challenges during development was to build a product that satisfies the needs of both lecturers and students. Quizzes on the app run in real-time, enabling lecturers to integrate test-taking into their lectures.  This added an extra layer of complexity and we focused on using websockets with socket.io to support real-time interactions. The app became so well-adopted that City University returned to us to work on optimising the real time experience when the usage boomed from the early-adoption figures of around 50 to 250 simultaneous users.We love it when products we’ve built are successful enough to warrant our working on supporting a growing user base!
+            One of the challenges during development was to build a product that satisfies the needs of both lecturers and students. Quizzes on the app run in real-time, enabling lecturers to integrate test-taking into their lectures.  This added an extra layer of complexity and we focused on using websockets with socket.io to support real-time interactions. The app became so well-adopted that City University returned to us to work on optimising the real time experience when the usage boomed from the early-adoption figures of around 50 to 250 simultaneous users. We love it when products we’ve built are successful enough to warrant our working on supporting a growing user base!
           </p>
           <img className="pv4" src={quodlMobileOnly} alt="design-images" />
           <img src={quodlDesktop2} alt="design-images" />
