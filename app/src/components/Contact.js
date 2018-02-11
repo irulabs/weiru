@@ -12,7 +12,8 @@ class Contact extends Component {
       name: "",
       email: "",
       message: "",
-      emailError: false
+      emailError: false,
+      isSubmitted: false
     }
   }
 
@@ -22,7 +23,7 @@ class Contact extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    
+
     const { name, email, message, emailError } = this.state;
     const isValidEmail = validator.validate(email);
 
@@ -43,7 +44,12 @@ class Contact extends Component {
             "message": message
           })
         })
-        .then((res) => console.log(res, 'posted sucessfully!'))
+        .then((res) => {
+          console.log(res, 'posted sucessfully!')
+          this.setState({
+            isSubmitted: true
+          })
+        })
         .catch((error) => console.log('error when posting'));
 
       }
@@ -56,18 +62,20 @@ class Contact extends Component {
 
   render() {
     console.log(this.state.emailError, 'error')
+    console.log(this.state.isSubmitted, 'isSubmitted')
     return (
       <section className="ph7-l pv5 bg-black">
-        <form onSubmit={this.handleSubmit} className="flex flex-wrap justify-between">
-          <Input
-            width="w-45"
-            label="name"
-            name="name"
-            inputType="input"
-            value={this.state.name}
-            handleInput={this.handleChange}
-            placeholder="Jessica Salmon" />
-          <Input
+      { !this.state.isSubmitted &&
+          <form onSubmit={this.handleSubmit} className="flex flex-wrap justify-between">
+            <Input
+              width="w-45"
+              label="name"
+              name="name"
+              inputType="input"
+              value={this.state.name}
+              handleInput={this.handleChange}
+              placeholder="Jessica Salmon" />
+            <Input
               width="w-45"
               label="email"
               name="email"
@@ -75,26 +83,30 @@ class Contact extends Component {
               value={this.state.email}
               handleInput={this.handleChange}
               placeholder="youremail@here.com" />
-          <Input
-            width="w-100"
-            label="message"
-            name="message"
-            inputType="textarea"
-            value={this.state.message}
-            handleInput={this.handleChange}
-            placeholder="let us know how we can help!" />
+            <Input
+              width="w-100"
+              label="message"
+              name="message"
+              inputType="textarea"
+              value={this.state.message}
+              handleInput={this.handleChange}
+              placeholder="let us know how we can help!" />
 
-            <div className="flex justify-end w-100">
+            <div className="flex flex-column items-end w-100">
               { this.state.emailError &&
                 <div className="white">Please enter a valid email</div>
               }
               <button
-                className="ma2 bg-white f4 tc w-30 pa3 bn pointer outline-0"
+                className="bg-white f4 tc w-30 pa3 bn pointer outline-0"
                 type="submit">
-                Submit
+                  Submit
               </button>
             </div>
-        </form>
+          </form>
+      }
+      { this.state.isSubmitted &&
+        <div className="tc white pv6">Thanks for your message, we will be in touch soon.</div>
+      }
 
       </section>
     );
