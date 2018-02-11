@@ -17,6 +17,10 @@ h6 {
   sans-serif;
 }
 
+.bg-dark-magenta {
+  background: #7c2069;
+}
+
 .f0 {
   font-size: 4rem;
 }
