@@ -871,6 +871,7 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Bungee', sans-serif; }
 .b--light-orange { border-color: #e99c1e; }
 .f0 { font-size: 4rem; }
 .w-45 { width: 45%; }
+/* extra large screen: 1280px */
 .text-area { resize: none; height: 5.5rem; }
 @media screen and (min-width:30em) {
  .aspect-ratio-ns { height: 0; position: relative; }
@@ -2154,5 +2155,18 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Bungee', sans-serif; }
  .v-mid-l { vertical-align: middle; }
  .v-top-l { vertical-align: top; }
  .v-btm-l { vertical-align: bottom; }
+}
+@media screen and (min-width: 48em) {
+ .w-45-ns { width: 45%; }
+}
+@media screen and (min-width: 48em) and (max-width: 64em) {
+ .w-45-m { width: 45%; }
+}
+@media screen and (min-width: 64em) {
+ .w-45-l { width: 45%; }
+}
+@media screen and (min-width: 80em) {
+ .w-45-xl { width: 45%; }
+ .w-30-xl { width: 30%; }
 }
 

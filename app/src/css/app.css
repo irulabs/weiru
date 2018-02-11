@@ -45,6 +45,35 @@ h6 {
   width: 45%;
 }
 
+@media screen and (min-width: 48em) {
+  .w-45-ns {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em){
+  .w-45-m {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 64em){
+  .w-45-l {
+    width: 45%;
+  }
+}
+
+/* extra large screen: 1280px */
+@media screen and (min-width: 80em){
+  .w-45-xl {
+    width: 45%;
+  }
+
+  .w-30-xl {
+    width: 30%;
+  }
+}
+
 .text-area {
   resize: none;
   height: 5.5rem;

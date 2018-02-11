@@ -3,7 +3,6 @@ import berkeley from '../assets/clients/berkeley.png';
 import buildingExploratory from '../assets/clients/building-exploratory.png';
 import city from '../assets/clients/city.svg';
 import dwyl from '../assets/clients/dwyl.png';
-import emf from '../assets/clients/emf.png';
 
 const Clients = () => {
   return (
