@@ -2,8 +2,9 @@ import React from 'react';
 
 import Card from './Card';
 
-import placeholder1 from '../assets/placeholder/1.jpg';
-import placeholder2 from '../assets/placeholder/2.jpg';
+import quodl from '../assets/quodl/quodl-mobile.png';
+import exploratory from '../assets/exploratory/be-mobile.png';
+import berkeley from '../assets/berkeley/berkeley-mobile.png';
 
 const Work = () => {
   return (
@@ -11,15 +12,15 @@ const Work = () => {
       <h3>Our Work</h3>
       <div className="flex-ns justify-between-ns">
         <Card
-          image={ placeholder1 }
+          image={ quodl }
           client="Etiam Nibh"
           blurb="Nullam id dolor id nibh ultricies vehicula ut id elit."/>
         <Card
-          image={ placeholder2 }
+          image={ exploratory }
           client="Risus Egestas"
           blurb="Nullam quis risus eget urna mollis ornare vel eu leo."/>
         <Card
-          image={ placeholder1 }
+          image={ berkeley }
           client="Commodo Dolor"
           blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
 
