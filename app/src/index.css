@@ -865,6 +865,9 @@ img { max-width: 100%; }
 body { font-family: 'Montserrat', sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Bungee', sans-serif; }
 .bg-dark-magenta { background: #7c2069; }
+.bg-light-orange { background: #e99c1e; }
+.bg-dark-green { background: #42a276; }
+.b--light-orange { border-color: #e99c1e; }
 .f0 { font-size: 4rem; }
 .w-45 { width: 45%; }
 .text-area { resize: none; height: 5.5rem; }
