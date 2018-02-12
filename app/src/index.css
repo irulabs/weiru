@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Bungee|Montserrat:500,700');
+@import url('https://fonts.googleapis.com/css?family=Bungee|Open+Sans:300,400,600,700,800');
 /*! TACHYONS v4.9.0 | http://tachyons.io */
 /*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
 html { line-height: 1.15; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
@@ -862,7 +862,7 @@ img { max-width: 100%; }
 .debug-grid-16 { background: transparent url( data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAMklEQVR4AWOgCLz/b0epAa6UGuBOqQHOQHLUgFEDnAbcBZ4UGwDOkiCnkIhdgNgNxAYAiYlD+8sEuo8AAAAASUVORK5CYII= ) repeat 0 0; }
 .debug-grid-8-solid { background: #fff url( data:image/gif;base64,R0lGODdhCAAIAPEAAADw/wDx/////wAAACwAAAAACAAIAAACDZQvgaeb/lxbAIKA8y0AOw== ) repeat 0 0; }
 .debug-grid-16-solid { background: #fff url( data:image/gif;base64,R0lGODdhEAAQAPEAAADw/wDx/xXy/////ywAAAAAEAAQAAACIZyPKckYDQFsb6ZqD85jZ2+BkwiRFKehhqQCQgDHcgwEBQA7 ) repeat 0 0; }
-body, button { font-family: 'Montserrat', sans-serif; }
+body, button { font-family: 'Open Sans', sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Bungee', sans-serif; }
 .bungee { font-family: 'Bungee', sans-serif; }
 .bg-dark-magenta { background: #7c2069; }

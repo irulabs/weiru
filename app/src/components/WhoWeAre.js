@@ -6,14 +6,14 @@ import notLockedIn from '../assets/icons/locked-in.svg';
 const WhoWeAre = () => {
   return (
     <section className="ph4 ph6-m ph7-l pv5">
-      <h3>We build products with care</h3>
-      <p>
-        <span className="underline bungee">Care.</span> &nbsp;
+    { /*<h3>We build products with care</h3> */}
+      <p className="f3 fw6">
+        <span className="underline bungee f2">Care.</span> &nbsp;
         In what we work on. In how we build it. Building a product is a
         wonderful thing, but too often the people who own the idea are left
         beind. As developers, we take you with us, working with you to define a
         solution. Perhaps you need help defining the details of your MVP,
-        technical feedback on designs or _________________ ? We are happy to
+        technical feedback on designs or __________________________________ ? We are happy to
         help - the more we work together, the better the product will be. And
         that is what makes us happy: building beautiful, well-thought-out and
         scalable products that delight users.
