@@ -865,6 +865,7 @@ img { max-width: 100%; }
 body, button { font-family: 'Open Sans', sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Bungee', sans-serif; }
 .bungee { font-family: 'Bungee', sans-serif; }
+.h4p5 { height: 10rem; }
 .bg-dark-magenta { background: #7c2069; }
 .bg-light-orange { background: #e99c1e; }
 .bg-dark-green { background: #42a276; }
