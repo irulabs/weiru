@@ -1,13 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Card = ({ image, client, blurb }) => {
+const Card = ({ width, image, client, blurb, link }) => {
   // whole card clicks through to case study
   return (
-    <div className="w-100 w-30-ns tl">
-      <img alt="" src={ image } className="h5-ns w-100" />
+    <div className={`${width} tl mb4 mb0-l`}>
+      <img alt="" src={ image } className="w-100" />
       <div className="ph1">
-        <p className="b">{ client }</p>
+        <h3 className="b f4 h3 ma0 flex items-center">{ client }</h3>
         <p>{ blurb }</p>
+        <Link className="b link pointer underline black" to={ `/case-study/${link}` } ><p> Read More </p> </Link>
       </div>
     </div>
   )

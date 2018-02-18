@@ -2,26 +2,36 @@ import React from 'react';
 
 import Card from './Card';
 
-import placeholder1 from '../assets/placeholder/1.jpg';
-import placeholder2 from '../assets/placeholder/2.jpg';
+import quodl from '../assets/quodl/quodl-mobile.png';
+import exploratory from '../assets/exploratory/be-mobile.png';
+import berkeley from '../assets/berkeley/berkeley-mobile.png';
 
 const Work = () => {
   return (
-    <section className="ph7-l pv5 tc">
+    <section className="ph4 ph6-m ph7-l pv5 tc">
       <h3>Our Work</h3>
-      <div className="flex-ns justify-between-ns">
+      <div className="flex-ns flex-wrap justify-between-ns">
         <Card
-          image={ placeholder1 }
-          client="Etiam Nibh"
-          blurb="Nullam id dolor id nibh ultricies vehicula ut id elit."/>
+          width="w-100 w-45-ns w-30-xl"
+          image={ quodl }
+          client="Quodl"
+          blurb="A real-time quiz app to increase in-lecture engagement and support learning"
+          link="quodl"
+        />
         <Card
-          image={ placeholder2 }
-          client="Risus Egestas"
-          blurb="Nullam quis risus eget urna mollis ornare vel eu leo."/>
+          width="w-100 w-45-ns w-30-xl"
+          image={ exploratory }
+          client="Building Exploratory"
+          blurb="A Single Page app showcasing locally listed buildings in London Borough of Islington"
+          link="building-exploratory"
+        />
         <Card
-          image={ placeholder1 }
-          client="Commodo Dolor"
-          blurb="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+          width="w-100 w-45-ns w-30-xl"
+          image={ berkeley }
+          client="Berkeley Homes"
+          blurb="Encouraging reporting of positive and negative safety behaviours on construction sites"
+          link="berkeley"
+          />
 
       </div>
     </section>

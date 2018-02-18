@@ -10,12 +10,12 @@ class Berkeley extends Component {
   render() {
     return (
       <div>
-        <Nav color="bg-dark-green" postion="fixed" />
-        <div className="ph7-l">
+        <Nav color="bg-dark-green" position="fixed" />
+        <div className="ph4 ph5-m ph7-l">
 
           <h3 className="tc mt0 pt6"> CLIENT WORK </h3>
           <h1 className="f1 tc"> Berkeley Homes </h1>
-          <p className="f4 tc"> An app to encourage reporting of positive and negative safety behaviours on construction sites </p>
+          <p className="f4 tc"> Encouraging reporting of positive and negative safety behaviours on construction sites </p>
           <img src={berkeleyMobile} alt="design-images" />
 
           <div className="flex justify-center items-center">
@@ -32,10 +32,10 @@ class Berkeley extends Component {
             <h3 className="pl2">Implementation </h3>
           </div>
           <p className="f4">
-            With the knowledge that current methods weren’t working, we knew that in order to build an effective solution we needed to understand _why_ builders weren’t using the current system. During the research phase, we discovered that the main reason for the low response rate was the amount of detail required from the builder in a language which was often not their native tongue.
+            With the knowledge that current methods weren’t working, we knew that in order to build an effective solution we needed to understand <span className="b">why</span> builders weren’t using the current system. During the research phase, we discovered that the main reason for the low response rate was the amount of detail required from the builder in a language which was often not their native tongue.
           </p>
           <p className="f4">
-            Once we understood the issue, we were able to architect a solution which minimised the steps that builders had to take to successfully report an event. We also realised that the forms were usually filled out once the builder was off-site meaning that it was sometimes hard to get accurate information about _precisely_ where on site the event happened. We solved this by creating a feature which allowed the user to provide visual information about the location and encourage reporting on the spot. All this reporting data needed to be reviewed by the safety manager who could take the necessary follow-up action, and so we set up a system of email alerts to the relevant parties when a new report is submitted.
+            Once we understood the issue, we were able to architect a solution which minimised the steps that builders had to take to successfully report an event. We also realised that the forms were usually filled out once the builder was off-site meaning that it was sometimes hard to get accurate information about precisely where on site the event happened. We solved this by creating a feature which allowed the user to provide visual information about the location and encourage reporting on the spot. All this reporting data needed to be reviewed by the safety manager who could take the necessary follow-up action, and so we set up a system of email alerts to the relevant parties when a new report is submitted.
           </p>
 
           <div className="flex justify-center items-center">
@@ -43,7 +43,7 @@ class Berkeley extends Component {
             <h3 className="pl2">Project Outcome </h3>
           </div>
           <p className="f4">
-            The results of the digital product became visible in a rapid space of time: within just two weeks of the product going live. The number of responses increased significantly and most of the responses were in the form of an image, showing how sometimes we can collect the information we need in unexpected ways. Lowering the barrier to entry and input fields has led to a more connected environment for Goodmans Fields in which all members on site contribute to maintaining a safe environment.
+            The results of the digital product became visible within just two weeks of the product going live. The number of responses increased significantly and most of the responses were in the form of an image, showing how sometimes we can collect the information we need in unexpected ways. Lowering the barrier to entry and input fields has led to a more connected environment for Goodmans Fields in which all members on site contribute to maintaining a safe environment.
           </p>
 
         </div>

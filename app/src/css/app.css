@@ -1,10 +1,11 @@
 @import "tachyons";
 
-@import url('https://fonts.googleapis.com/css?family=Bungee|Montserrat:500,700');
 
+@import url('https://fonts.googleapis.com/css?family=Bungee|Open+Sans:300,400,600,700,800');
 
 body, button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Open Sans',
+  sans-serif;
 }
 
 h1,
@@ -19,6 +20,11 @@ h6 {
 
 .bungee {
   font-family: 'Bungee', sans-serif;
+}
+
+
+.h4p5 {
+  height: 10rem;
 }
 
 .bg-dark-magenta {
@@ -43,6 +49,35 @@ h6 {
 
 .w-45 {
   width: 45%;
+}
+
+@media screen and (min-width: 48em) {
+  .w-45-ns {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 48em) and (max-width: 64em){
+  .w-45-m {
+    width: 45%;
+  }
+}
+
+@media screen and (min-width: 64em){
+  .w-45-l {
+    width: 45%;
+  }
+}
+
+/* extra large screen: 1280px */
+@media screen and (min-width: 80em){
+  .w-45-xl {
+    width: 45%;
+  }
+
+  .w-30-xl {
+    width: 30%;
+  }
 }
 
 .text-area {
