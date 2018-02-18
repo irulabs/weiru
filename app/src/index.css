@@ -865,6 +865,7 @@ img { max-width: 100%; }
 body, button { font-family: 'Open Sans', sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Bungee', sans-serif; }
 .bungee { font-family: 'Bungee', sans-serif; }
+.h2p5 { height: 3rem; }
 .h4p5 { height: 10rem; }
 .bg-dark-magenta { background: #7c2069; }
 .bg-light-orange { background: #e99c1e; }
@@ -874,6 +875,13 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Bungee', sans-serif; }
 .w-45 { width: 45%; }
 /* extra large screen: 1280px */
 .text-area { resize: none; height: 5.5rem; }
+.underline-yellow { -webkit-text-decoration-color: #ffd700; text-decoration-color: #ffd700; }
+/* placeholder text */
+::-webkit-input-placeholder {/* Chrome, Firefox, Opera, Safari 10.1+ */ color: #f4f4f4; opacity: 1; /* Firefox */ }
+:-ms-input-placeholder {/* Chrome, Firefox, Opera, Safari 10.1+ */ color: #f4f4f4; opacity: 1; /* Firefox */ }
+::placeholder {/* Chrome, Firefox, Opera, Safari 10.1+ */ color: #f4f4f4; opacity: 1; /* Firefox */ }
+:-ms-input-placeholder {/* Internet Explorer 10-11 */ color: #f4f4f4; }
+::-ms-input-placeholder {/* Microsoft Edge */ color: #f4f4f4; }
 @media screen and (min-width:30em) {
  .aspect-ratio-ns { height: 0; position: relative; }
  .aspect-ratio--16x9-ns { padding-bottom: 56.25%; }

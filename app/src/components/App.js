@@ -8,13 +8,16 @@ import Clients from './Clients';
 import Work from './Work';
 import Contact from './Contact';
 
+import About from './About';
+import OurWay from './OurWay';
+
 class App extends Component {
   render() {
     return (
       <div>
-        <Nav />
-        <Landing />
-        <WhoWeAre />
+        <Nav position="fixed" borders="bb bw1 b--dark-pink"/>
+        <About />
+        <OurWay />
         <Clients />
         <Work />
         <Contact />

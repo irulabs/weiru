@@ -6,8 +6,8 @@ import dwyl from '../assets/clients/dwyl.png';
 
 const Clients = () => {
   return (
-    <section className="ph4 ph7-l pv2 tc">
-      <h3 className="mt0">You&#x27;re in good company</h3>
+    <section className="ph4 ph7-l pv2 tc bg-near-white">
+      <h3 className="mt0 underline underline-yellow dark-pink f5">You&#x27;re in good company</h3>
       <div className="flex justify-between">
         <div className="h2 w-10 tc flex items-center justify-center">
           <img alt="Berkeley Homes" src={berkeley} />

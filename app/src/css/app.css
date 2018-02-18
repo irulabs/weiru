@@ -22,7 +22,9 @@ h6 {
   font-family: 'Bungee', sans-serif;
 }
 
-
+.h2p5 {
+  height: 3rem;
+}
 .h4p5 {
   height: 10rem;
 }
@@ -83,4 +85,23 @@ h6 {
 .text-area {
   resize: none;
   height: 5.5rem;
+}
+
+.underline-yellow {
+   text-decoration-color: #FFD700;
+}
+
+/* placeholder text */
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #F4F4F4;
+    opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #F4F4F4;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+    color: #F4F4F4;
 }
