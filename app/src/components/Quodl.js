@@ -35,15 +35,15 @@ class Quodl extends Component {
             A real time-quiz app that promotes student engagement and allows lecturers to assess the responses of students to spot any collective and individual gaps in knowledge.
           </p>
 
-          <div className="flex justify-center tc pv3">
-            <div className="w-40 ba bw1 b--light-orange mh2 ph2">
+          <div className="flex-ns justify-center tc pv3">
+            <div className="w-100 mv2 w-40-ns ba bw1 b--light-orange mh2 ph2">
               <h3> Lecturer </h3>
               <p> Ability to set up multiple modules </p>
               <p> Run Live quizzes </p>
               <p> Set up gamification with medals and trophies </p>
               <p> Review student progress, keeping track of how individuals are getting on </p>
             </div>
-            <div className="w-40 ba bw1 b--light-orange mh2 ph2">
+            <div className="w-100 mv2 w-40-ns ba bw1 b--light-orange mh2 ph2">
               <h3> Student </h3>
               <p> Mainly used on mobile devices </p>
               <p> Join live quizzes </p>
