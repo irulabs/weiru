@@ -866,6 +866,7 @@ body, button { font-family: 'Open Sans', sans-serif; }
 h1, h2, h3, h4, h5, h6 { font-family: 'Bungee', sans-serif; }
 .bungee { font-family: 'Bungee', sans-serif; }
 .h2p5 { height: 3rem; }
+.h1p5 { height: 1.5rem; }
 .h4p5 { height: 10rem; }
 .bg-dark-magenta { background: #7c2069; }
 .bg-light-orange { background: #e99c1e; }
@@ -2173,14 +2174,17 @@ h1, h2, h3, h4, h5, h6 { font-family: 'Bungee', sans-serif; }
 @media screen and (min-width: 48em) {
  .w-45-ns { width: 45%; }
  .h2p5-ns { height: 3rem; }
+ .h1p5-ns { height: 1.5rem; }
 }
 @media screen and (min-width: 48em) and (max-width: 64em) {
  .w-45-m { width: 45%; }
  .h2p5-m { height: 3rem; }
+ .h1p5-m { height: 1.5rem; }
 }
 @media screen and (min-width: 64em) {
  .w-45-l { width: 45%; }
  .h2p5-l { height: 3rem; }
+ .h1p5-l { height: 1.5rem; }
 }
 @media screen and (min-width: 80em) {
  .w-45-xl { width: 45%; }

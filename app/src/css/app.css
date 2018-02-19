@@ -25,6 +25,11 @@ h6 {
 .h2p5 {
   height: 3rem;
 }
+
+.h1p5 {
+  height: 1.5rem;
+}
+
 .h4p5 {
   height: 10rem;
 }
@@ -66,6 +71,9 @@ h6 {
   .h2p5-ns {
     height: 3rem;
   }
+  .h1p5-ns {
+    height: 1.5rem;
+  }
 }
 
 /* M QUERIES */
@@ -76,6 +84,9 @@ h6 {
   .h2p5-m {
     height: 3rem;
   }
+  .h1p5-m {
+    height: 1.5rem;
+  }
 }
 
 /* L QUERIES */
@@ -85,6 +96,9 @@ h6 {
   }
   .h2p5-l {
     height: 3rem;
+  }
+  .h1p5-l {
+    height: 1.5rem;
   }
 }
 
