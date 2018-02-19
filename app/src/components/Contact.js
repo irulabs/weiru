@@ -64,7 +64,7 @@ class Contact extends Component {
     console.log(this.state.emailError, 'error')
     console.log(this.state.isSubmitted, 'isSubmitted')
     return (
-      <section className="ph4 ph6-m ph7-l pt6 pb5 bg-dark-pink vh-100">
+      <section className="ph4 ph6-m ph7-l pv5 bg-dark-pink vh-100">
       <h2 className="underline underline-yellow white tc">Get in Touch</h2>
 
       { !this.state.isSubmitted &&
