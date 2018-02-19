@@ -8,7 +8,7 @@ const Clients = () => {
   return (
     <section className="ph4 ph6-l pv4 tc bg-near-white">
       <h2 className="mt0 underline underline-yellow dark-pink">You&#x27;re in good company</h2>
-      <div className="flex justify-between flex-wrap">
+      <div className="flex justify-between flex-wrap mt4">
         <div className="w-50 w-25-ns tc flex items-center justify-center ph1 mv2">
           <img alt="Berkeley Homes" className="h2 h2p5-ns" src={berkeley} />
         </div>
