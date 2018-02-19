@@ -5,7 +5,7 @@ import CheckboxItem from './CheckboxItem';
 const OurWay = () => {
   return (
     <section className="ph4 ph6-m ph7-l pv5 bb b--near-white bw3">
-      <h2 className="underline underline-yellow dark-pink tl">Our Way</h2>
+      <h2 className="dark-pink tc">Our Way</h2>
 
       <div className="flex flex-column">
 

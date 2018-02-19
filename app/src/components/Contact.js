@@ -45,7 +45,6 @@ class Contact extends Component {
           })
         })
         .then((res) => {
-          console.log(res, 'posted sucessfully!')
           this.setState({
             isSubmitted: true
           })
@@ -61,11 +60,9 @@ class Contact extends Component {
   };
 
   render() {
-    console.log(this.state.emailError, 'error')
-    console.log(this.state.isSubmitted, 'isSubmitted')
     return (
-      <section className="ph4 ph6-m ph7-l pv5 bg-dark-pink vh-100">
-      <h2 className="underline underline-yellow white tc">Get in Touch</h2>
+      <section className="ph4 ph6-m ph7-l pv5 bg-dark-pink">
+      <h2 className="white tc">Get in Touch</h2>
 
       { !this.state.isSubmitted &&
           <form onSubmit={this.handleSubmit} className="flex flex-wrap justify-between mt5">
