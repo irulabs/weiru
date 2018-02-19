@@ -10,7 +10,7 @@ class Berkeley extends Component {
   render() {
     return (
       <div>
-        <Nav color="bg-dark-green" position="fixed" />
+        <Nav color="bg-white" position="fixed" borders="bb bw1 b--dark-green"/>
         <div className="ph4 ph5-m ph7-l">
 
           <h3 className="tc mt0 pt6"> CLIENT WORK </h3>
@@ -47,7 +47,6 @@ class Berkeley extends Component {
           </p>
 
         </div>
-        <Nav color="bg-dark-green" />
       </div>
     );
   }

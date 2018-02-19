@@ -64,9 +64,11 @@ class Contact extends Component {
     console.log(this.state.emailError, 'error')
     console.log(this.state.isSubmitted, 'isSubmitted')
     return (
-      <section className="ph4 ph6-m ph7-l pv5 bg-black">
+      <section className="ph4 ph6-m ph7-l pv5 bg-dark-pink vh-100">
+      <h2 className="underline underline-yellow white tc">Get in Touch</h2>
+
       { !this.state.isSubmitted &&
-          <form onSubmit={this.handleSubmit} className="flex flex-wrap justify-between">
+          <form onSubmit={this.handleSubmit} className="flex flex-wrap justify-between mt5">
             <Input
               width="w-45"
               label="name"
@@ -93,19 +95,20 @@ class Contact extends Component {
               placeholder="let us know how we can help!" />
 
             <div className="flex flex-column items-end w-100">
-              { this.state.emailError &&
-                <div className="white">Please enter a valid email</div>
-              }
               <button
-                className="bg-white f4 tc w-30 pa3 bn pointer outline-0"
+                className="f4 tc w-30 pa3 pointer bg-dark-pink yellow ba bw1 b--yellow outline-0"
                 type="submit">
                   Submit
               </button>
+
+              { this.state.emailError &&
+                <div className="white pv2">Please enter a valid email</div>
+              }
             </div>
           </form>
       }
       { this.state.isSubmitted &&
-        <div className="tc white pv6">Thanks for your message, we will be in touch soon.</div>
+        <div className="tc white pv6 f3">Thanks for your message, we&#x27;ll be in touch soon.</div>
       }
 
       </section>
