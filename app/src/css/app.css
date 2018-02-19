@@ -40,9 +40,14 @@ h6 {
   background: #42A276;
 }
 
-
+.b--dark-magenta {
+  border-color: #7c2069;
+}
 .b--light-orange {
   border-color: #e99c1e;
+}
+.b--dark-green {
+  border-color: #42A276;
 }
 
 .f0 {
@@ -53,25 +58,37 @@ h6 {
   width: 45%;
 }
 
+/* NS QUERIES */
 @media screen and (min-width: 48em) {
   .w-45-ns {
     width: 45%;
   }
+  .h2p5-ns {
+    height: 3rem;
+  }
 }
 
+/* M QUERIES */
 @media screen and (min-width: 48em) and (max-width: 64em){
   .w-45-m {
     width: 45%;
   }
+  .h2p5-m {
+    height: 3rem;
+  }
 }
 
+/* L QUERIES */
 @media screen and (min-width: 64em){
   .w-45-l {
     width: 45%;
   }
+  .h2p5-l {
+    height: 3rem;
+  }
 }
 
-/* extra large screen: 1280px */
+/* CUSTOM: extra large screen: 1280px */
 @media screen and (min-width: 80em){
   .w-45-xl {
     width: 45%;
