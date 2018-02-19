@@ -3,6 +3,7 @@ import berkeley from '../assets/clients/berkeley.png';
 import buildingExploratory from '../assets/clients/building-exploratory.png';
 import city from '../assets/clients/city.svg';
 import dwyl from '../assets/clients/dwyl.png';
+import ge from '../assets/clients/ge.png';
 
 const Clients = () => {
   return (
@@ -12,8 +13,8 @@ const Clients = () => {
         <div className="w-50 w-25-ns tc flex items-center justify-center ph1 mv2">
           <img alt="Berkeley Homes" className="h2 h2p5-ns" src={berkeley} />
         </div>
-        <div className="w-50 w-10-ns tc flex items-center justify-center ph1 mv2">
-          <img alt="dwyl" className="h2 h2p5-ns" src={dwyl} />
+        <div className="w-50 w-25-ns tc flex items-center justify-center ph1 mv2">
+          <img alt="dwyl" className="h2 h3-ns" src={ge} />
         </div>
         <div className="w-50 w-25-ns tc flex items-center justify-center ph1 mv2">
           <img alt="The Building Exploratory" className="h1 h1p5-ns" src={buildingExploratory} />
