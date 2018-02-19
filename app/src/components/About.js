@@ -10,7 +10,7 @@ const About = () => {
 
       <p className="dark-pink f7 mt0">*<span className="i">disclaimer</span>: there&#x27;s more to it than code.</p>
 
-      <p className="mw7-ns pt3 mid-gray near-black fw6">
+      <p className="mw7-ns pt3 mid-gray near-black fw6 dn">
       Donec sed odio dui. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec id elit non mi porta gravida at eget metus. Maecenas faucibus mollis interdum. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Nullam id dolor id nibh ultricies vehicula ut id elit. Nullam quis risus eget urna mollis ornare vel eu leo.
       </p>
 
