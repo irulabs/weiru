@@ -12,7 +12,7 @@ class Quodl extends Component {
   render() {
     return (
       <div>
-        <Nav color="bg-light-orange" position="fixed" />
+        <Nav color="bg-white" position="fixed" borders="bb bw1 b--light-orange" />
         <div className="ph4 ph5-m ph7-l">
 
           <h3 className="tc mt0 pt6"> CLIENT WORK </h3>
@@ -73,7 +73,6 @@ class Quodl extends Component {
           </p>
 
         </div>
-        <Nav color="bg-light-orange" />
       </div>
     );
   }

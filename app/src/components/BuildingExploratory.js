@@ -12,7 +12,7 @@ class BuildingExploratory extends Component {
     render() {
         return (
             <div>
-                <Nav color="bg-dark-magenta" position="fixed"/>
+                <Nav color="bg-white" position="fixed" borders="bb bw1 b--dark-magenta"/>
                 <div className="ph4 ph5-m ph7-l">
 
                     <h3 className="tc mt0 pt6"> CLIENT WORK </h3>
@@ -49,7 +49,6 @@ class BuildingExploratory extends Component {
                     <p className="f4"> We like to work in an iterative way following the agile methodology and Islington Local List was no exception to this approach. We’ve worked very closely with The Building Exploratory to achieve the first version. Once it has been tested with users and critical feedback has been gathered, we will be working on ways to improve the experience further. </p>
 
                 </div>
-                <Nav color="bg-dark-magenta" />
             </div>
         );
     }
